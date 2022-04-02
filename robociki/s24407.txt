@@ -5,9 +5,9 @@ import main.Pair;
 import main.Unit;
  
 @SuppressWarnings("serial")
-public class S25662 extends Unit {
+public class S24407 extends Unit {
  
-    public S25662(final String id, final Pair<Double, Double> position, final double r,
+    public S24407(final String id, final Pair<Double, Double> position, final double r,
                         final CollisionModel model) {
         super(id, position, r, model);
  

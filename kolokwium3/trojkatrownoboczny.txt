@@ -1,0 +1,21 @@
+package com.company;
+
+public class TrojkatRownoboczny extends TrojkatRownoramienny {
+    double podstawa;
+    public TrojkatRownoboczny(double podstawa){
+        super(podstawa,podstawa);
+        this.podstawa = podstawa;
+
+}
+
+    public TrojkatRownoboczny(double podstawa, double podstawa1) {
+        super(podstawa,podstawa1);
+    }
+
+    public double wysokosc(double x) {
+        return (int)(Math.sqrt(3) / 2. * x);
+    }
+    public double wysokosc() {
+        return Math.sqrt(3) / 2. ;
+    }
+}

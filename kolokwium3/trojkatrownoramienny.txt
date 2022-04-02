@@ -1,0 +1,18 @@
+package com.company;
+
+public class TrojkatRownoramienny {
+    double podstawa;
+    double ramie;
+    TrojkatRownoramienny(double podstawa, double ramie){
+        this.podstawa = podstawa;
+        this.ramie = ramie;
+    }
+
+    public double wysokosc() {
+
+        return Math.sqrt((ramie * ramie) - (podstawa * podstawa / 4.));
+    }
+    public double wysokosc(double x) {
+        return Math.sqrt((ramie * ramie) - (podstawa * podstawa / 4.)) * x;
+    }
+}

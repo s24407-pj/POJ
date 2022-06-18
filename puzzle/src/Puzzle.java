@@ -17,7 +17,13 @@ public class Puzzle extends Frame implements ActionListener{
             }
         }
 
-        b1=new Button(stk.pop().toString());
+        addWindowListener (new WindowAdapter() {
+            public void windowClosing (WindowEvent e) {
+                dispose();
+            }
+        });
+
+            b1=new Button(stk.pop().toString());
         b1.setBounds(50,100,40,40);
         b2=new Button(stk.pop().toString());
         b2.setBounds(100,100,40,40);
